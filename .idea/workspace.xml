@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0d07535d-18c6-40e6-a778-2ec1434f9816" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/moviestars-frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/defaultmovie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/moviestarslogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/buttons/Button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/buttons/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/nav/Nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/privateroute/PrivateRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/AuthContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/addmovie/AddMovie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/Login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/movies/Movies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profile/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/signup/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zAZMlukyJhyOlHJ0z4gaPN082i" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testbuttons" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\thieu\WebstormProjects\moviestars-frontend\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\thieu\WebstormProjects\moviestars-frontend\src\components\privateroute" />
+      <recent name="C:\Users\thieu\WebstormProjects\moviestars-frontend\src\components\buttons" />
+      <recent name="C:\Users\thieu\WebstormProjects\moviestars-frontend\src\components\nav" />
+      <recent name="C:\Users\thieu\WebstormProjects\moviestars-frontend\src\assets\img" />
+      <recent name="C:\Users\thieu\WebstormProjects\moviestars-frontend\src\assets\icons" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d07535d-18c6-40e6-a778-2ec1434f9816" name="Default Changelist" comment="" />
+      <created>1633592806932</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633592806932</updated>
+      <workItem from="1633592809938" duration="311000" />
+      <workItem from="1633593778396" duration="1844000" />
+      <workItem from="1633595669070" duration="6646000" />
+      <workItem from="1633604056685" duration="1575000" />
+      <workItem from="1633607979891" duration="1310000" />
+      <workItem from="1633686720607" duration="266000" />
+      <workItem from="1633687738363" duration="821000" />
+      <workItem from="1633949442490" duration="8192000" />
+      <workItem from="1634025616610" duration="25000" />
+      <workItem from="1634198337210" duration="3133000" />
+      <workItem from="1634493318750" duration="4296000" />
+      <workItem from="1634541833751" duration="6903000" />
+      <workItem from="1634585966431" duration="2475000" />
+      <workItem from="1634588581951" duration="2890000" />
+      <workItem from="1634626318797" duration="28020000" />
+      <workItem from="1634734060455" duration="618000" />
+      <workItem from="1634739276924" duration="1141000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

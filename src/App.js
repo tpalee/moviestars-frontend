@@ -1,25 +1,51 @@
-import logo from './logo.svg';
+import {useEffect, useState} from "react";
 import './App.css';
+import PrivateRoute from "./components/privateroute/PrivateRoute";
+import {
+    Switch,
+    Route,
+} from 'react-router-dom';
+import Nav from "./components/nav/Nav";
+import axios from "axios";
+import Movies from "./pages/movies/Movies";
+import Login from "./pages/login/Login";
+import Signup from "./pages/signup/Signup";
+import AddMovie from "./pages/addmovie/AddMovie";
+import Profile from "./pages/profile/Profile";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [searchvalue, setSearchvalue] = useState(null);
+
+    return (
+        <div className="App">
+            <header>
+                <Nav searchvalue={searchvalue} setSearchvalue={setSearchvalue}/>
+            </header>
+            <main>
+                <Switch>
+                    <Route exact path="/">
+                        <Movies/>
+                    </Route>
+                    <Route path="/login">
+                        <Login/>
+                    </Route>
+                    <Route path="/signup">
+                        <Signup/>
+                    </Route>
+                    <PrivateRoute path="/addmovie">
+                        <AddMovie/>
+                    </PrivateRoute>
+                    <PrivateRoute path="/profile">
+                        <Profile/>
+                    </PrivateRoute>
+                </Switch>
+            </main>
+
+
+        </div>
+
+    );
 }
 
 export default App;
