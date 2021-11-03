@@ -3,7 +3,7 @@ import {AuthContext} from "../../context/AuthContext";
 import Button from "../buttons/Button";
 import {useContext} from "react";
 import {useForm} from 'react-hook-form';
-import './Nav.css';
+import styles from'./Nav.module.css';
 /*import fontAwesome/Material Design logo's' from react-icons library*/
 import {FaSearch, FaPlus, FaUser, FaUserCheck,FaUserTimes,FaUserPlus} from 'react-icons/fa';
 import {MdLocalMovies } from "react-icons/md";
@@ -13,8 +13,9 @@ import moviestarslogo from '../../assets/img/moviestarslogo.png';
 
 function Nav({setSearchvalue}) {
     const history = useHistory();
-    const {isAuth, logout} = useContext(AuthContext);
+    const {isAuth, logout,login,user} = useContext(AuthContext);
     const {register, handleSubmit} = useForm();
+    console.log(isAuth,user);
 
 
     function onFormSubmit(data){
@@ -27,81 +28,76 @@ function Nav({setSearchvalue}) {
 
     return (
         /* nav-element holds all the navigation elements*/
-        <nav className="navcontainer">
+        <nav className={styles.navcontainer}>
             {/* nav-beam created for the shape of the beam */}
-            <div className="navbeam">
-                <img src={moviestarslogo} alt="logo" className="logonav"/>
+            <div className={styles.navbeam}>
+                <img src={moviestarslogo} alt="logo" className={styles.logonav}/>
             </div>
             {/*  holds all the navigation forms and buttons*/}
-            <div className="navigation">
+            <div className={styles.navigation}>
 
                 {/* search form*/}
-                <div id="search-sort-container">
-                    <form id="searchcontainer" onSubmit={handleSubmit(onFormSubmit)}>
+                <div id={styles['search-sort-container']}>
+                    <form id={styles.searchcontainer} onSubmit={handleSubmit(onFormSubmit)}>
                         <label htmlFor="search">
                             <input type="text"
-                                   id="searchmovie-input"
+                                   id={styles.searchmovieinput}
                                    name="search"
                                    placeholder="search movietitle"
                                    {...register("search")}
                             />
                         </label>
-                        <Button name="searchbutton" className="navbutton searchbutton" type="submit" id="searchbutton">
-                                   <span>
-                                    <FaSearch className="icon search"/>
-                                    <span className="buttontext-span">search</span>
-                                       </span>
+                        <Button name="searchbutton" className={`${styles.navbutton} ${styles.searchbutton}`} type="submit">
+                                    <FaSearch className={`${styles.icon} ${styles.search}`}/>
+                                    <span className={styles.buttontextspan}>search</span>
                         </Button>
                     </form>
                 </div>
 
                 {/*buttons with navlinks*/}
-                <div id="navbuttons">
-                    {!isAuth &&
-                    <NavLink className="navlink" to="/login">
-                        <Button
+                <div id={styles.navbuttons}>
+                    {!isAuth ?
+                        <>
+                        <button
+                            type="button"
+                            onClick={() => history.push('/signin')}
                             name="login"
-                            className="navbutton loginbutton">
-                            <FaUser className="icon login"/>
-                            <span className="buttontext-span logintext">Login</span>
-                        </Button>
-                    </NavLink>}
-                    {!isAuth &&
-                    <NavLink className="navlink" to="/signup">
-                        <Button
+                            className={`${styles.navbutton} ${styles.loginbutton}`}>
+                            <FaUser className={`${styles.icon} ${styles.login}`}/>
+                            <span className={`${styles.buttontextspan} ${styles.logintext}`}>Login</span>
+                        </button>
+                        <button
                             name="signup"
-                            className="navbutton signupbutton">
-                            <FaUserPlus className="icon signup"/>
-                            <span className="buttontext-span signuptext">signup</span>
-                        </Button>
-                    </NavLink>}
-                    {isAuth &&
-                    <NavLink className="navlink" to="/addmovie">
-                        <Button
+                            onClick={() => history.push('/signup')}
+                            className={`${styles.navbutton} ${styles.signupbutton}`}>
+                            <FaUserPlus className={`${styles.icon} ${styles.signup}`}/>
+                            <span className={`${styles.buttontextspan} ${styles.signuptext}`}>signup</span>
+                        </button>
+                    </>
+                    :
+                    <>
+                        <button
                             name="add-movie"
-                            className="navbutton addmoviebutton">
-                            <FaPlus className="icon search"/>
-                            <span className="buttontext-span addmovietext">Add Movie</span>
-                        </Button>
-                    </NavLink>}
-                    {isAuth &&
-                    <NavLink className="navlink" to="/profile">
-                        <Button
+                            onClick={() => history.push('/addmovie')}
+                            className={`${styles.navbutton} ${styles.addmoviebutton}`}>
+                            <FaPlus className={`${styles.icon} ${styles.search}`}/>
+                            <span className={`${styles.buttontextspan} ${styles.addmovietext}`}>Add Movie</span>
+                        </button>
+                        <button
                             name="myprofile"
-                            className="navbutton myprofilebutton">
-                            <FaUserCheck className="icon myprofile"/>
-                            <span className="buttontext-span myprofiletext">My Profile</span>
-                        </Button>
-                    </NavLink>}
-                    {isAuth &&
-                    <NavLink className="navlink" exact to="/">
-                        <Button
+                            className={`${styles.navbutton} ${styles.myprofilebutton}`}>
+                            <FaUserCheck className={`${styles.icon} ${styles.myprofile}`}/>
+                            <span className={`${styles.buttontextspan} ${styles.myprofiletext}`}>My Profile</span>
+                        </button>
+                        <button
+                            onClick={logout}
                             name="logout"
-                            className="navbutton logoutbutton">
-                            <FaUserTimes className="icon logout"/>
-                            <span className="buttontext-span logouttext">logout</span>
-                        </Button>
-                    </NavLink>}
+                            className={`${styles.navbutton} ${styles.logoutbutton}`}>
+                            <FaUserTimes className={`${styles.icon} ${styles.logout}`}/>
+                            <span className={`${styles.buttontextspan} ${styles.logouttext}`}>logout</span>
+                        </button>
+                        </>
+                    }
                 </div>
             </div>
         </nav>)

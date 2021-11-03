@@ -8,7 +8,7 @@ import {
 import Nav from "./components/nav/Nav";
 import axios from "axios";
 import Movies from "./pages/movies/Movies";
-import Login from "./pages/login/Login";
+import Signin from "./pages/login/Signin";
 import Signup from "./pages/signup/Signup";
 import AddMovie from "./pages/addmovie/AddMovie";
 import Profile from "./pages/profile/Profile";
@@ -27,8 +27,8 @@ function App() {
                     <Route exact path="/">
                         <Movies/>
                     </Route>
-                    <Route path="/login">
-                        <Login/>
+                    <Route path="/signin">
+                        <Signin/>
                     </Route>
                     <Route path="/signup">
                         <Signup/>

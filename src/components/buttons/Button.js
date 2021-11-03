@@ -1,7 +1,7 @@
 import React from "react";
-import './Button.css';
+import './Button.module.css';
 
-function Button({children, className, image}) {
+function Button({children, className}) {
 
     return (
         <button className={`defaultstyling ${className}`}>

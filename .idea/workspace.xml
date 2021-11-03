@@ -2,33 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d07535d-18c6-40e6-a778-2ec1434f9816" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/moviestars-frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/defaultmovie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/moviestarslogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/nav/Nav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/privateroute/PrivateRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/AuthContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/addmovie/AddMovie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/login/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/movies/Movies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/signup/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/Signin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/Signin.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttons/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/Button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttons/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AuthContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/addmovie/AddMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/addmovie/AddMovie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup/Signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/signup/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup/Signup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -101,6 +90,18 @@
       <workItem from="1634626318797" duration="28020000" />
       <workItem from="1634734060455" duration="618000" />
       <workItem from="1634739276924" duration="1141000" />
+      <workItem from="1634835430204" duration="7177000" />
+      <workItem from="1634890572549" duration="12064000" />
+      <workItem from="1634998380930" duration="1243000" />
+      <workItem from="1635243829904" duration="49000" />
+      <workItem from="1635404904274" duration="19573000" />
+      <workItem from="1635494455176" duration="2429000" />
+      <workItem from="1635668253623" duration="3338000" />
+      <workItem from="1635699441217" duration="432000" />
+      <workItem from="1635766671883" duration="5714000" />
+      <workItem from="1635844883706" duration="23477000" />
+      <workItem from="1635923359029" duration="1646000" />
+      <workItem from="1635941106765" duration="2226000" />
     </task>
     <servers />
   </component>
