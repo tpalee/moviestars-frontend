@@ -1,10 +1,10 @@
 import React from "react";
-import './Button.module.css';
+import './Button.css';
 
-function Button({children, className}) {
+function Button({children, className, handleClick}) {
 
     return (
-        <button className={`defaultstyling ${className}`}>
+        <button className={`default-btn ${className}`} onClick={handleClick}>
             <span>
             {children}
             </span>

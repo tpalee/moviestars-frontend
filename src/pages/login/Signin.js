@@ -3,7 +3,7 @@ import {useState, useContext} from "react";
 import { AuthContext } from '../../context/AuthContext';
 import {Link} from "react-router-dom";
 import axios from "axios";
-import styles from './Signin.module.css';
+import './Signin.css';
 import {FaUser} from 'react-icons/fa';
 
 
@@ -39,10 +39,10 @@ function Signin(props) {
     return (
 
 
-        <div className={styles.logincontainer}>
-            <div className={styles.titlecontainer}>
-                <FaUser id={styles['login-user-icon']}/>
-                <h3 id={styles['loginform-title']}>SignIn</h3>
+        <div className="logincontainer">
+            <div className="titlecontainer">
+                <FaUser id="login-user-icon"/>
+                <h3 id="loginform-title">SignIn</h3>
             </div>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="username">
@@ -75,9 +75,7 @@ function Signin(props) {
                     Inloggen
                 </button>
             </form>
-{/*            <Button className={`${styles.loginbutton} ${styles.cancelbutton}`} type="button">
-                Cancel
-            </Button>*/}
+
     <p>Heb je nog geen account? <Link to="/signup">Signup</Link> first</p>
         </div>
     );

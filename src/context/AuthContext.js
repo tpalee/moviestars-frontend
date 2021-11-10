@@ -1,6 +1,6 @@
 import React, {createContext, useState, useEffect} from 'react';
 import jwt_decode from 'jwt-decode';
-import {useHistory} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import axios from "axios";
 
 export const AuthContext = createContext({});
@@ -11,7 +11,8 @@ function AuthContextProvider({children}) {
         user: null,
         status: 'pending',
     });
-    const history = useHistory();
+    const [isAdmin, setIsAdmin] = useState(false)
+    const navigate = useNavigate();
 
     // MOUNTING EFFECT
     useEffect(() => {
@@ -29,13 +30,13 @@ function AuthContextProvider({children}) {
                 status: 'done',
             });
         }
-    }, []);
+    },[]);
 
     function login(JWT) {
         localStorage.setItem('token', JWT);
         const decoded = jwt_decode(JWT);
-        console.log(decoded.sub);
-        fetchUserData(decoded.sub, JWT, '/profile');
+        //console.log(decoded.sub);
+        fetchUserData(decoded.sub, JWT, '/movies');
     }
 
     function logout() {
@@ -47,7 +48,7 @@ function AuthContextProvider({children}) {
         });
 
         console.log('user logged out!');
-        history.push('/');
+        navigate('/');
     }
 
 
@@ -60,6 +61,13 @@ function AuthContextProvider({children}) {
                 },
             });
 
+            const authorities=result.data.authorities;
+            authorities.map((authority)=>{
+                if(authority.authority==='ROLE_ADMIN'){
+                    setIsAdmin(true);
+            }
+            })
+
             toggleIsAuth({
                 ...isAuth,
                 isAuth: true,
@@ -69,8 +77,10 @@ function AuthContextProvider({children}) {
                 },
                 status: 'done',
             });
+
+
             if (redirectUrl) {
-                history.push(redirectUrl);
+                navigate(redirectUrl);
             }
 
         } catch (e) {
@@ -86,6 +96,7 @@ function AuthContextProvider({children}) {
     const contextData = {
         isAuth: isAuth.isAuth,
         user: isAuth.user,
+        isAdmin:isAdmin,
         login: login,
         logout: logout,
     };

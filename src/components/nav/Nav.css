@@ -46,9 +46,13 @@
 
 
 /*logo in the nav*/
-.logonav {
+.linklogonav {
     margin-top: 6px;
     position: absolute;
+    z-index: 2;
+}
+
+.logonav {
     z-index: 1;
 }
 

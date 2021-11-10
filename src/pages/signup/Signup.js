@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React, { useState,useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './Signup.css';
 
@@ -7,35 +7,40 @@ function SignUp() {
     // state voor het formulier
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const source = axios.CancelToken.source();
+
+    useEffect(() => {
+        return function cleanup() {
+            source.cancel();
+        }
+    }, []);
 
     // state voor functionaliteit
     const [error, toggleError] = useState(false);
     const [loading, toggleLoading] = useState(false);
-    const history = useHistory();
+    const navigate = useNavigate();
 
     async function handleSubmit(e) {
         e.preventDefault();
         toggleError(false);
         toggleLoading(true);
-
-        console.log(username,password);
-
         try {
             await axios.post('http://localhost:8080/users/signup', {
                 username: username,
                 password: password,
+            }, {
+                cancelToken: source.token,
             });
 
             // Let op: omdat we geen axios Canceltoken gebruiken zul je hier een memory-leak melding krijgen.
             // Om te zien hoe je een canceltoken implementeerd kun je de bonus-branch bekijken!
 
             // als alles goed gegaan is, linken we dyoor naar de login-pagina
-            history.push('/login');
+            navigate('/login');
         } catch(e) {
             console.error(e);
             toggleError(true);
         }
-
         toggleLoading(false);
     }
 

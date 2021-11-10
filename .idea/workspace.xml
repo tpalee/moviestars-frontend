@@ -2,21 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d07535d-18c6-40e6-a778-2ec1434f9816" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/login/Signin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/login/Signin.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/movie/Movie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/movie/Movie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/privateroute/PrivateAdminRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/review/Review.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/review/Review.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shadowcontainer/ShadowContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shadowcontainer/Shadowcontainer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/addReview/AddReview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/addReview/AddReview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/movieDetails/MovieDetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/movieDetails/MovieDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/movies/Movies.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profile/AdminProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/updateReview/UpDateReview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/updateReview/UpdateReview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttons/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/Button.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/buttons/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttons/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/Button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/privateroute/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/privateroute/PrivateRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AuthContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/addmovie/AddMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/addmovie/AddMovie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup/Signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/Signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/Signin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/Signin.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/Signin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/movies/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movies/Movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/UserProfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/signup/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup/Signup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +44,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -44,17 +61,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testbuttons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/movie" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\thieu\WebstormProjects\moviestars-frontend\src\components\movie" />
       <recent name="C:\Users\thieu\WebstormProjects\moviestars-frontend\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -101,7 +121,18 @@
       <workItem from="1635766671883" duration="5714000" />
       <workItem from="1635844883706" duration="23477000" />
       <workItem from="1635923359029" duration="1646000" />
-      <workItem from="1635941106765" duration="2226000" />
+      <workItem from="1635941106765" duration="4702000" />
+      <workItem from="1636017132153" duration="17291000" />
+      <workItem from="1636054070816" duration="3631000" />
+      <workItem from="1636097295457" duration="24163000" />
+      <workItem from="1636204450566" duration="3052000" />
+      <workItem from="1636284769007" duration="6712000" />
+      <workItem from="1636305516951" duration="12792000" />
+      <workItem from="1636357185969" duration="4922000" />
+      <workItem from="1636367485981" duration="12690000" />
+      <workItem from="1636398225729" duration="7427000" />
+      <workItem from="1636444203989" duration="44294000" />
+      <workItem from="1636527694586" duration="2669000" />
     </task>
     <servers />
   </component>

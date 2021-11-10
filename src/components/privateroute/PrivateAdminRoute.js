@@ -3,16 +3,16 @@ import {useNavigate, Route} from "react-router-dom";
 import {AuthContext} from "../../context/AuthContext";
 
 
-function PrivateRoute({isAut, children, ...rest}){
-    const {isAuth} = useContext(AuthContext);
+function PrivateAdminRoute({isAut, children, ...rest}){
+    const {isAuth,isAdmin} = useContext(AuthContext);
     const navigate=useNavigate;
 
 
     return(
         <Route {...rest}>
-            {isAuth ? children : navigate('/movies')}
+            {isAuth && isAdmin ? children : navigate('/movies')}
         </Route>
     )
 }
 
-export default PrivateRoute;
+export default PrivateAdminRoute;
