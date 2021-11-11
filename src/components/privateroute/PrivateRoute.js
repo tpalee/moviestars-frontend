@@ -4,13 +4,13 @@ import {AuthContext} from "../../context/AuthContext";
 
 
 function PrivateRoute({isAut, children, ...rest}){
-    const {isAuth} = useContext(AuthContext);
+    const {isAuth,isAdmin} = useContext(AuthContext);
     const navigate=useNavigate;
-
 
     return(
         <Route {...rest}>
-            {isAuth ? children : navigate('/movies')}
+
+            {isAuth && (isAdmin===false) ? children : navigate('/movies')}
         </Route>
     )
 }

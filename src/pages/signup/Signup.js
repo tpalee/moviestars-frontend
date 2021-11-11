@@ -31,11 +31,6 @@ function SignUp() {
             }, {
                 cancelToken: source.token,
             });
-
-            // Let op: omdat we geen axios Canceltoken gebruiken zul je hier een memory-leak melding krijgen.
-            // Om te zien hoe je een canceltoken implementeerd kun je de bonus-branch bekijken!
-
-            // als alles goed gegaan is, linken we dyoor naar de login-pagina
             navigate('/login');
         } catch(e) {
             console.error(e);

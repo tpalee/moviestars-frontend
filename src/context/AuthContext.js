@@ -35,7 +35,6 @@ function AuthContextProvider({children}) {
     function login(JWT) {
         localStorage.setItem('token', JWT);
         const decoded = jwt_decode(JWT);
-        //console.log(decoded.sub);
         fetchUserData(decoded.sub, JWT, '/movies');
     }
 
@@ -48,7 +47,7 @@ function AuthContextProvider({children}) {
         });
 
         console.log('user logged out!');
-        navigate('/');
+        navigate('/movies');
     }
 
 
@@ -66,6 +65,9 @@ function AuthContextProvider({children}) {
                 if(authority.authority==='ROLE_ADMIN'){
                     setIsAdmin(true);
             }
+                else{
+                    setIsAdmin(false)
+                }
             })
 
             toggleIsAuth({

@@ -2,39 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d07535d-18c6-40e6-a778-2ec1434f9816" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/movie/Movie.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/movie/Movie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/privateroute/PrivateAdminRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/review/Review.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/review/Review.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shadowcontainer/ShadowContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shadowcontainer/Shadowcontainer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/addReview/AddReview.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/addReview/AddReview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/movieDetails/MovieDetails.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/movieDetails/MovieDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/movies/Movies.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/AdminProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/updateReview/UpDateReview.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/updateReview/UpdateReview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profile/AdminProfile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profile/UserProfile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/userdetails/UserDetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/userdetails/UserDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttons/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttons/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/Button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie/Movie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/privateroute/PrivateAdminRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/privateroute/PrivateAdminRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/privateroute/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/privateroute/PrivateRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AuthContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/addmovie/AddMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/addmovie/AddMovie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/Signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/Signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/Signin.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/Signin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/movieDetails/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movieDetails/MovieDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/movies/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/movies/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/UserProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/AdminProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/AdminProfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/signup/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/updateReview/UpdateReview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/updateReview/UpdateReview.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -132,7 +116,8 @@
       <workItem from="1636367485981" duration="12690000" />
       <workItem from="1636398225729" duration="7427000" />
       <workItem from="1636444203989" duration="44294000" />
-      <workItem from="1636527694586" duration="2669000" />
+      <workItem from="1636527694586" duration="35147000" />
+      <workItem from="1636616062221" duration="14837000" />
     </task>
     <servers />
   </component>

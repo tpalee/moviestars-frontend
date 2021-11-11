@@ -17,6 +17,7 @@ import AdminProfile from "./pages/profile/AdminProfile";
 import MovieDetails from "./pages/movieDetails/MovieDetails";
 import AddReview from "./pages/addReview/AddReview";
 import UpdateReview from "./pages/updateReview/UpdateReview";
+import UserDetails from "./pages/userdetails/UserDetails";
 
 
 
@@ -40,6 +41,7 @@ function App() {
                     <PrivateRoute path="/updatereview/:reviewId" element={<UpdateReview/>}/>
                     <PrivateRoute path="/user/profile" element={<UserProfile/>}/>
                     <PrivateAdminRoute path="/admin/profile" element={<AdminProfile/>}/>
+                    <PrivateAdminRoute path="/admin/userdetails/:userId" element={<UserDetails/>}/>
                 </Routes>
             </main>
 

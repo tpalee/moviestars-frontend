@@ -4,7 +4,6 @@ import Button from "../buttons/Button";
 import {useContext} from "react";
 import {useForm} from 'react-hook-form';
 import './Nav.css';
-/*import fontAwesome/Material Design logo's' from react-icons library*/
 import {FaSearch, FaPlus, FaUser, FaUserCheck,FaUserTimes,FaUserPlus} from 'react-icons/fa';
 /*import images*/
 import moviestarslogo from '../../assets/img/moviestarslogo.png';
@@ -12,14 +11,12 @@ import moviestarslogo from '../../assets/img/moviestarslogo.png';
 
 function Nav({setSearchvalue}) {
     const navigate=useNavigate();
-    const {isAuth, logout,user,isAdmin} = useContext(AuthContext);
+    const {isAuth, logout,isAdmin} = useContext(AuthContext);
     const {register, handleSubmit} = useForm();
-    console.log(isAuth,user);
 
 
     function onFormSubmit(data){
         const{search}=data
-      console.log(search);
       setSearchvalue(search)
 
     }
@@ -85,7 +82,7 @@ function Nav({setSearchvalue}) {
                         <button
                             name="myprofile"
                             className="navbutton myprofilebutton"
-                            onClick={()=>{isAdmin ? navigate('/admin/profile'):navigate('/user/profile')}}>
+                            onClick={()=>{isAuth && isAdmin ? navigate('/admin/profile'):navigate('/user/profile')}}>
                             <FaUserCheck className="icon myprofile"/>
                             <span className="buttontextspan myprofiletext">My Profile</span>
                         </button>

@@ -14,10 +14,13 @@ function Movies(props) {
                     {
                         headers:{
                             "Content-Type":"application/json",
-                        },
-
+                        }
                     });
                 setMovieData(result.data)
+
+
+
+
             } catch (error) {
                 console.error();
             }
@@ -27,10 +30,13 @@ function Movies(props) {
     }, [])
 
 
+console.log(movieData)
+
     return (
         <>
             <div className="position-cont-row">
             {movieData && movieData.map((movie) => {
+
                 return <Movie
                 key={movie.id}
                 movieId={movie.id}
@@ -41,8 +47,6 @@ function Movies(props) {
             })}
             </div>
         </>);
-
-
             }
 
 export default Movies;

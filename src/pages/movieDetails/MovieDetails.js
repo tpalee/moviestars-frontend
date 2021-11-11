@@ -43,7 +43,7 @@ function MovieDetails() {
             {movie &&
             <>
                 <ShadowContainer className="moviedetails-cont">
-                    <img className="moviedetails-image" src={movie.image ? movie.image.file : defaultImage}
+                    <img className="moviedetails-image" src={defaultImage}
                          alt="movieimage"/>
                     <div className="moviedetails-info">
                         <h1 className="moviedetails-h1">{movie.movieTitle}</h1>

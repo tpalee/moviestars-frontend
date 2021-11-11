@@ -9,7 +9,7 @@ function AddMovie(props) {
     const navigate = useNavigate();
 
     const {register, handleSubmit} = useForm();
-    const [file, setFile] = useState("");
+    const [file, setFile] = useState(null);
 
     const fileMaker = (e) => {
         console.log(e.target.files[0]);
@@ -25,6 +25,9 @@ function AddMovie(props) {
         const {movieTitle, movieGenre, movieDescription, movieImage} = data;
         const formData = new FormData();
         formData.append('file', file)
+        console.log(formData.values());
+
+console.log(file);
 
         try {
             const result = await axios.post('http://localhost:8080/movies', {
@@ -32,6 +35,8 @@ function AddMovie(props) {
                     movieGenre: movieGenre,
                     movieDescription: movieDescription,
                     user: {username: user.username},
+                    moviePoster:user.username,
+
                 }, {
                     headers: {
                         "Content-Type": "application/json",
@@ -46,9 +51,9 @@ function AddMovie(props) {
         } catch (e) {
             console.error(e)
         }
-
-
+if(file!==null){
         try {
+
             const result = await axios.post('http://localhost:8080/images', formData
 
                 , {
@@ -62,14 +67,14 @@ function AddMovie(props) {
             const locationHeader = result.headers.location;
             //console.log(locationHeader);
             let id = (locationHeader.lastIndexOf('/'));
-            imageId = locationHeader.substring(id);
+            imageId = locationHeader.substring(id+1);
 
         } catch (e) {
             console.error(e)
         }
 
         try {
-            const result = await axios.patch(`http://localhost:8080/movies/${movieId}/images${imageId}`, {
+            const result = await axios.patch(`http://localhost:8080/movies/${movieId}/images/${imageId}`, {
                     image: {id: `${imageId}`}
                 }
                 , {
@@ -83,7 +88,7 @@ function AddMovie(props) {
 
         } catch (e) {
             console.error(e)
-        }
+        }}
         navigate('/movies');
     }
 

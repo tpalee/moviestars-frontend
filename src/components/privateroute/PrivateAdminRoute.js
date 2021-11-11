@@ -7,7 +7,6 @@ function PrivateAdminRoute({isAut, children, ...rest}){
     const {isAuth,isAdmin} = useContext(AuthContext);
     const navigate=useNavigate;
 
-
     return(
         <Route {...rest}>
             {isAuth && isAdmin ? children : navigate('/movies')}

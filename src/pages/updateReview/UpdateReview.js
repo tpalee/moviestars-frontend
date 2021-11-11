@@ -20,10 +20,6 @@ function UpdateReview() {
             axios.put(`http://localhost:8080/reviews/${state.reviewId}`, {
                 review: data.review,
                 reviewRating: data.rating,
-   /*             reviewer: user.username,
-                user:{username:user.username},
-                movie:{id:state},
-                badLanguage:false,*/
             }, {
                 headers: {
                     'Content-Type': "application/json",
